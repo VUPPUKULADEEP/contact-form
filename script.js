@@ -1,9 +1,12 @@
 function check(event){
     console.log('entered')
     event.preventDefault()
-    const name = document.querySelector('#name')
-    const email = document.querySelector('#email')
-    const message = document.querySelector('#message')
+    const name = document.querySelector('#name').value
+    const email = document.querySelector('#email').value
+    const message = document.querySelector('#message').value
     
-    console.log(name.value)
+    if (!name.match(/^[a-zA-Z]{6,10}$/)){
+        console.log('error occurred')
+    }
+    
 }
