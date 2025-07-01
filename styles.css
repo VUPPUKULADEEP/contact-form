@@ -1,0 +1,90 @@
+header{
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+body{
+    font-size: 20px;
+}
+
+form{
+    border: 0.5px solid black;
+    margin: 10% 25%;
+    padding-top:5%;
+    padding-bottom: 5%; 
+    border-radius: 9px;
+    display:grid;
+    grid-template-rows: 1fr 1fr 1fr 0.5fr;
+    grid-template-columns: 2fr 1fr 2fr;
+    grid-template-areas:
+    ". name ."
+    ". email ."
+    ". message ."
+    ". button .";
+}
+
+.name{
+    grid-area: name;
+}
+.email{
+    grid-area: email;
+}
+.message{
+    grid-area: message;
+}
+.button{
+    grid-area: button;
+}
+
+input,textarea{
+    padding: 15px 32px;
+    border-radius: 8px;
+    border: 1px solid black;
+    outline:none
+}
+
+label{
+    display: block;
+}
+
+button {
+  border-radius: 8px;
+  background-color: #04AA6D; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+
+.button{
+    display: flex;
+    justify-content: center;
+}
+
+.alert{
+    position: absolute;
+}
+
+@media (max-width: 425px){
+    input,textarea{
+        padding: 4px 5px;
+    }
+    form{
+        padding-left: 5%;
+        width: 70%;
+        margin-left: 13%;
+        margin-top: 10%;
+    }
+}
+
+@media (width: 1440px){
+    form{
+        margin: 5% 35%;
+    }
+}
