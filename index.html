@@ -5,24 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact-form</title>
     <link rel="stylesheet" href="styles.css">
+    
+    <script src="script.js"></script>
 </head>
 <body>
     <header>
         <h1>Contact-form</h1>
     </header>
     
-        <form onsubmit="">
+        <form onsubmit="check(event)">
         <label for="name">Enter your name</label>
-        <input type="text" id="name" required>
+        <input type="text" id="name" required autocomplete="off">
         <label for="email">Enter your email</label>
-        <input type="email" id="email" required>
+        <input type="email" id="email" required autocomplete="off">
         <label for="message">enter message</label>
-        <textarea placeholder="enter message" required></textarea>
+        <textarea id="message" placeholder="enter message" required autocomplete="off"></textarea>
         <button type="submit" >submit</button>
         </form>
     <footer>
 
     </footer>
-    <script src="script.js"></script>
 </body>
 </html>
